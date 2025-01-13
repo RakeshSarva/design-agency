@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            width:1600px;
+            height: 1600px;
+        }
+        .one{
+            width:200px;
+            height: 200px;
+            background-color: lightblue;
+        }
+        .two{
+          
+            width: 200px;
+            height:200px;
+            background-color: yellow;
+        }
+        .three{  
+            position:absolute;
+            top:0px;
+            left:100px;  
+            width: 200px;
+            height:200px;
+            background-color:lightgreen
+        }
+        .four{
+            position: absolute;
+            top:0px;                     /*absolute works as when there is no ancestor with position property then it goes to top left if its ancestor has position property then child places with respect to ancestor*/
+            left:40px;
+            width: 200px;
+            height:200px;
+            background-color: lightcoral
+        }
+        .hlo{
+            width: 300px;
+            height:300px;
+            background-color: lightgray;
+            position:relative;
+            top:20px;
+        }
+        .five{
+            width:100%;
+            height:100px;
+            background-color: lightpink;
+            position:fixed;
+            bottom:0px;
+        }
+        .main-block{
+            width: 900px;
+            height: 700px;
+            background-color: lightgreen;
+            border:2px solid black;
+        }
+        .inner-block{
+            position:relative;
+            top:200px;
+            left:200px;
+            width: 500px;
+            height: 300px;
+            background-color: lightsalmon;
+        }
+        img{
+            position:absolute;
+            top:150px;
+            left:250px;
+            width:250px;
+            height:250px;
+            border:2px solid white;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one"><p>Hlo hi how are you</p></div>
+    <div class="two"><p>This is S.Rakesh</p></div>
+    <div class="three"><a href="./icon.jpg">Here the position is absolute as there is no ancestor with position property so it goes to top</a></div>
+    <div class="hlo"><div class="four"><h5>this is done when position of child is absolute and ancestor also uses position property</h5></div></div>
+    <div class="five"><p>here the element has position is fixed so it doesn't moves from its fixed position it stick to window's position</p></div>
+    <p style="margin-bottom:20px;margin-top:40px;">The task for the position property is : </p>
+    <div class="main-block">
+        <div class="inner-block"><div><img src="./icon.jpg" alt=""></div></div>
+        
+    </div>
+</body>
+</html>
